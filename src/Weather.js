@@ -21,24 +21,29 @@ export default function Weather() {
       <div className="row">
         <div className="col-3">
           <img
-            src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Rain"
           />
-          4°
+          34°
+          <div className=" col-3 description">
+            <div>
+              <ul>
+                <li>Precipitation:14%</li>
+                <li>Humidity:43%</li>
+                <li>Wind:3 m/s</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="col-3">
-          <ul>
-            <li>Precipitation: 50%</li>
-            <li>Humidity: 94%</li>
-            <li>Wind: 5m/s</li>
-          </ul>
-        </div>
-        <div className="col-6">
-          <h1>Kutchan</h1>
-          <ul>
-            <li>Friday 21:05</li>
-            <li>Rain</li>
-          </ul>
+
+        <div className=" overview col-6">
+          <h1>Ogbomosho, Nigeria</h1>
+          <div>
+            <ul>
+              <li className="date">Friday 15:00</li>
+              <li className="description">Mostly Sunny</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
