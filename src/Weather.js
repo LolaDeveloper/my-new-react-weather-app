@@ -23,37 +23,38 @@ export default function Weather() {
           </div>
         </div>
       </form>
-      <div className="row temperaturedesc">
-        <div className="col-6">
-          <div className="clearfix">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Rain"
-              className="float-left"
-            />
-
-            <span className="temperature">34</span>
-            <span className="unit"> °C</span>
+      <div className="clear-fix">
+        <div className="temperaturedesc">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Partly cloudy"
+            className="float-left"
+          />
+          <div>
+            <span className="temperature">33</span>
+            <span className="unit"> °C|°F</span>
           </div>
           <div className="weatherResult">
             <ul>
-              <li>Precipitation:14%</li>
-              <li>Humidity:43%</li>
-              <li>Wind:3 m/s</li>
+              <li>Precipitation:0%</li>
+              <li>Humidity:47%</li>
+              <li>Wind:2 m/s</li>
             </ul>
           </div>
-        </div>
 
-        <div className=" overview col-6">
-          <h1>Ogbomosho, Nigeria</h1>
-          <div>
-            <ul>
-              <li className="date">Friday 15:00</li>
-              <li className="description">Mostly Sunny</li>
-            </ul>
+          <div className="overview">
+            <h1>Ogbomosho, Nigeria</h1>
+            <div>
+              <ul>
+                <li className="date">Saturday 13:00</li>
+                <li className="description">Partly cloudy</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+      <hr />
     </div>
   );
 }
