@@ -76,8 +76,8 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiKey = "224e79ec9be151ffbe6eb3b4e7ab3ada";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}$units=metric`;
+    let apiKey = "224e79ec9be151ffbe6eb3b4e7ab3ada";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}$units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "Loading...";
   }
