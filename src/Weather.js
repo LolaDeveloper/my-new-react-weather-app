@@ -39,37 +39,35 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <div className="clear-fix">
-          <div className="temperaturedesc">
-            <img
-              src={weatherData.iconUrl}
-              alt={weatherData.description}
-              className="float-left"
-            />
-            <div>
-              <span className="temperature">
-                {Math.round(weatherData.temperature)}
-              </span>
-              <span className="unit"> °C|°F</span>
-            </div>
-            <div className="weatherResult">
-              <ul>
-                <li>Precipitation:0%</li>
-                <li>{weatherData.humidity}:47%</li>
-                <li>{weatherData.wind} : m/s</li>
-              </ul>
-            </div>
 
-            <div className="overview">
-              <h1>{weatherData.city}</h1>
-              <div>
-                <ul>
-                  <li className="date">{weatherData.date}</li>
-                  <li className="description text-capitalize">
-                    {weatherData.description}
-                  </li>
-                </ul>
-              </div>
+        <div className="temperaturedesc">
+          <img
+            src={weatherData.iconUrl}
+            alt={weatherData.description}
+            className="float-left"
+          />
+          <div>
+            <span className="temperature">
+              {Math.round(weatherData.temperature)}
+            </span>
+            <span className="unit"> °C|°F</span>
+          </div>
+          <div className="weatherResult">
+            <ul>
+              <li>{weatherData.humidity}:47%</li>
+              <li>{weatherData.wind} : m/s</li>
+            </ul>
+          </div>
+
+          <div className="overview">
+            <h1>{weatherData.city}</h1>
+            <div>
+              <ul>
+                <li className="date">{weatherData.date}</li>
+                <li className="description text-capitalize">
+                  {weatherData.description}
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -77,7 +75,7 @@ export default function Weather(props) {
     );
   } else {
     let apiKey = "224e79ec9be151ffbe6eb3b4e7ab3ada";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}$units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "Loading...";
   }
