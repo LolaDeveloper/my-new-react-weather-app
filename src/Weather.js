@@ -12,7 +12,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      iconUrl: "	https://www.accuweather.com/images/weathericons/38.svg",
       wind: response.data.wind.speed,
       city: response.data.name,
     });
@@ -40,37 +40,40 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
+        <div className="card">
+          <div className="cardBody">
+            <div className="temperaturedesc mt-3">
+              <img
+                src={weatherData.iconUrl}
+                alt={weatherData.description}
+                className="float-left"
+              />
+              <div>
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}
+                </span>
+                <span className="unit"> °C|°F</span>
+              </div>
+              <div className="weatherResult">
+                <ul>
+                  <li>{weatherData.humidity}:47%</li>
+                  <li>{weatherData.wind} : m/s</li>
+                </ul>
+              </div>
 
-        <div className="temperaturedesc">
-          <img
-            src={weatherData.iconUrl}
-            alt={weatherData.description}
-            className="float-left"
-          />
-          <div>
-            <span className="temperature">
-              {Math.round(weatherData.temperature)}
-            </span>
-            <span className="unit"> °C|°F</span>
-          </div>
-          <div className="weatherResult">
-            <ul>
-              <li>{weatherData.humidity}:47%</li>
-              <li>{weatherData.wind} : m/s</li>
-            </ul>
-          </div>
-
-          <div className="overview">
-            <h1>{weatherData.city}</h1>
-            <div>
-              <ul>
-                <li className="date">
-                  <FormattedDate date={weatherData.date} />
-                </li>
-                <li className="description text-capitalize">
-                  {weatherData.description}
-                </li>
-              </ul>
+              <div className="overview">
+                <h1>{weatherData.city}</h1>
+                <div>
+                  <ul>
+                    <li className="date">
+                      <FormattedDate date={weatherData.date} />
+                    </li>
+                    <li className="description text-capitalize">
+                      {weatherData.description}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
