@@ -10,53 +10,53 @@
   margin-bottom: 20px;
 }
 
-.Weather .cardBody {
+.WeatherInfo .cardBody {
   background-color: rgb(255, 255, 255);
   padding: 12 px 12 px 16 px;
 }
-.Weather .temperaturedesc {
+.WeatherInfo .temperaturedesc {
   display: flex;
   margin: 1px;
   vertical-align: top;
 }
 
-.Weather img {
+.WeatherInfo img {
   height: 64px;
   width: 64px;
   margin-right: 1px;
 }
 
-.Weather .temperature {
+.WeatherInfo .temperature {
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
 }
-.Weather .unit {
+.WeatherInfo .unit {
   font-size: 16px;
   font-weight: 400;
   position: relative;
   top: -30px;
   line-height: 1px;
 }
-.Weather .weatherResult {
+.WeatherInfo .weatherResult {
   position: relative;
   left: -10px;
 }
-.Weather .weatherResult li {
+.WeatherInfo .weatherResult li {
   color: #70757a;
   font-size: 12px;
   line-height: 16px;
   list-style: none;
 }
 
-.Weather .overview {
+.WeatherInfo .overview {
   text-align: right;
   vertical-align: top;
   position: relative;
-  left: 120px;
+  left: 80px;
 }
 
-.Weather h1 {
+.WeatherInfo h1 {
   color: #202124;
   font-size: 22px;
   line-height: 26px;
@@ -65,12 +65,12 @@
   margin-bottom: 0px;
 }
 
-.Weather .overview ul {
+.WeatherInfo .overview ul {
   margin: 0;
   padding: 0;
 }
 
-.Weather .overview li {
+.WeatherInfo .overview li {
   color: rgb(112, 117, 122);
   font-size: 16px;
   font-weight: 400;
