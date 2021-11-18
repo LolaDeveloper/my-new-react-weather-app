@@ -20,10 +20,11 @@
   vertical-align: top;
 }
 
-.WeatherInfo img {
+.WeatherInfo canvas {
   height: 64px;
   width: 64px;
-  margin-right: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .WeatherInfo .temperature {
@@ -39,6 +40,7 @@
   line-height: 1px;
 }
 .WeatherInfo .weatherResult {
+  margin-right: 20px;
   position: relative;
   left: -10px;
 }
@@ -53,7 +55,7 @@
   text-align: right;
   vertical-align: top;
   position: relative;
-  left: 80px;
+  left: 100px;
 }
 
 .WeatherInfo h1 {
