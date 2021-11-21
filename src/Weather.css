@@ -11,8 +11,9 @@
 }
 
 .WeatherInfo .cardBody {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 12 px 12 px 16 px;
+  width: 600px;
 }
 .WeatherInfo .temperaturedesc {
   display: flex;
@@ -27,12 +28,15 @@
   margin-left: 10px;
 }
 
-.WeatherInfo .temperature {
+.WeatherTemperature .temperature {
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
 }
-.WeatherInfo .unit {
+.WeatherTemperature .unit a {
+  text-decoration: none;
+}
+.WeatherTemperature .unit {
   font-size: 16px;
   font-weight: 400;
   position: relative;
@@ -40,7 +44,6 @@
   line-height: 1px;
 }
 .WeatherInfo .weatherResult {
-  margin-right: 20px;
   position: relative;
   left: -10px;
 }
@@ -55,7 +58,7 @@
   text-align: right;
   vertical-align: top;
   position: relative;
-  left: 100px;
+  left: 60px;
 }
 
 .WeatherInfo h1 {
