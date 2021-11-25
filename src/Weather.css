@@ -12,8 +12,9 @@
 
 .WeatherInfo .cardBody {
   background-color: #ffffff;
-  padding: 12 px 12 px 16 px;
-  width: 600px;
+
+  max-width: 600px;
+  margin: 30px auto;
 }
 .WeatherInfo .temperaturedesc {
   display: flex;
@@ -81,4 +82,12 @@
   font-weight: 400;
   list-style: none;
   line-height: 20px;
+}
+@media (max-width: 960px) {
+  .WeatherInfo .overview {
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    left: 0px;
+  }
 }
