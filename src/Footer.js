@@ -7,7 +7,7 @@ export default function Footer() {
       <p className="Footer text-center mt-3">
         😎This project was coded by{" "}
         <a
-          href="https://funmilola-alice-adeniran-portfolio.netlify.app/"
+          href="https://lola-portfolio.netlify.app//"
           title="View source code"
           target="_blank"
           rel="noreferrer"
